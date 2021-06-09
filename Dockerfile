@@ -47,7 +47,7 @@ EXPOSE 8080 8443
 ## Install 'vim'
 USER 0 # Required to perform privileged actions
 RUN install_packages vim nano
-USER 1001 # Revert to the original non-root user
+#USER 1001 # Revert to the original non-root user
 
 USER 1001
 ENTRYPOINT [ "/opt/bitnami/scripts/drupal/entrypoint.sh" ]
